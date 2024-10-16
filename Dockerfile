@@ -17,7 +17,7 @@ WORKDIR /app/
 #    cd /app && \
 #    git clone https://github.com/papergion/raspy_scsgate_exe scsgate
 
-RUN apt install -y libssl-dev libpaho-mqttpp-dev build-essential
+RUN apt install -y libssl-dev build-essential
 
 RUN git clone https://github.com/papergion/easysocket.git && \
     mv easysocket/MakeHelper /app/
